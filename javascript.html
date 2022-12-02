@@ -4,6 +4,15 @@
   </head>
   <body>
     <script type="text/javascript">
+      function handan(shadanki){
+        if(shadanki  > 6){
+          document.getElementById("kekka").innerHTML = "止まる";
+        } else if (shadanki >= 4) {
+          document.getElementById("kekka").innerHTML = "ダッシュ";
+        } else {
+          document.getElementById("kekka").innerHTML = "進む";
+        }
+      }
     </script>
     <input type="text" id="num">
     <input type="button" value="判断" onclick="handan(num.valie)">
